@@ -35,7 +35,7 @@ int main() {
         }
         exp += pow/factorial(i);
     }
-    printf("exp(%d) = %.32f\n", x, exp);
+    printf("exp(%f) = %.32f\n", x, exp);
 
     return 0;
 }
