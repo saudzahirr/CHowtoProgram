@@ -22,10 +22,10 @@ int main() {
     float exp = 0.0;
     float x;
 
-    printf("**************************\n");
-    printf("** Exponential Function **\n");
-    printf("**************************\n");
-    printf("x = ");
+    puts("**************************");
+    puts("** Exponential Function **");
+    puts("**************************");
+    puts("x = ");
     scanf("%f", &x);
 
     for (int i = 0; i <= n; i++) {
