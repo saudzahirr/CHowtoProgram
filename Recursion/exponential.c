@@ -25,7 +25,7 @@ int main() {
     puts("**************************");
     puts("** Exponential Function **");
     puts("**************************");
-    puts("x = ");
+    printf("x = ");
     scanf("%f", &x);
 
     for (int i = 0; i <= n; i++) {
