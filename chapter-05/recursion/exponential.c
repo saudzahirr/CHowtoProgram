@@ -2,11 +2,12 @@
  * Author  : Saud Zahir
  * Date    : June 19, 2024
  * Contact : m.saud.zahir@gmail.com
+ *
+ *
+ * Topic: Recursion
 */
 
-
 #include "stdio.h"
-
 
 int factorial(int n) {
     if (n == 0 || n == 1) {
