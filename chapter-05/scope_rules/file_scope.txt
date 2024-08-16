@@ -1,0 +1,14 @@
+/*
+ * Author  : Saud Zahir
+ * Date    : August 16, 2024
+ * Contact : m.saud.zahir@gmail.com
+ * 
+ * 
+ * Topic: Scope Rules
+*/
+
+An identifier declared outside any function has file scope.
+Such an identifier is “known” (i.e., accessible) in all
+functions from the point at which the identifier is declared
+until the end of the file. Global variables, function definitions,
+and function prototypes placed outside a function all have file scope.

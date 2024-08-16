@@ -1,0 +1,16 @@
+/*
+ * Author  : Saud Zahir
+ * Date    : August 16, 2024
+ * Contact : m.saud.zahir@gmail.com
+ * 
+ * 
+ * Topic: Scope Rules
+*/
+
+The only identifiers with function-prototype scope are those
+used in the parameter list of a function prototype. function
+prototypes do not require names in the parameter list—only
+types are required. If a name is used in the parameter list
+of a function prototype, the compiler ignores the name.
+Identifiers used in a function prototype can be reused
+elsewhere in the program without ambiguity.

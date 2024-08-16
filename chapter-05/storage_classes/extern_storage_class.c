@@ -14,8 +14,8 @@ extern long long int mul(long long int, long long int);
 
 int main() {
     long long int a, b;
-    a = (long long int) 3141592654;
-    b = (long long int) 2718281828;
+    a = 3141592654;
+    b = 2718281828;
     printf("c = %lld\n", mul(a, b));
     printf("x = %d\n", x);
 
