@@ -14,7 +14,7 @@
 #define SIZE 7
 
 int main() {
-    unsigned int frequency[SIZE] = {0};
+    long unsigned int frequency[SIZE] = {0};
 
     srand(time(NULL));
 
@@ -23,7 +23,7 @@ int main() {
         ++frequency[face];
     }
 
-    printf("%s%17s", "Face", "Frequency");
+    printf("%s%17s\n", "Face", "Frequency");
     for (size_t face = 1; face < SIZE; face++) {
         printf("%4lu%17lu\n", face, frequency[face]);
     }

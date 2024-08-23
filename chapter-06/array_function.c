@@ -32,6 +32,7 @@ void displayArray(const int array[], size_t size) {
     for (size_t i = 0; i < size; i++) {
         printf("%8d", array[i]);
     }
+    puts("");
 }
 
 void modifyArray(int array[], size_t size) {

@@ -36,7 +36,7 @@ int main() {
         Therefore & is not necessary.
     */
 
-    printf("%s", string);
+    printf("%s\n", string);
 
     return 0;
 }
