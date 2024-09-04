@@ -23,9 +23,9 @@ int main(void) {
     for (unsigned int pass = 1; pass < SIZE; pass++) {
         for (size_t i = 0; i < SIZE - 1; i++) {
             if (a[i] > a[i + 1]) {
-                int hold = a[i];
+                int temp = a[i];
                 a[i] = a[i + 1];
-                a[i + 1] = hold;
+                a[i + 1] = temp;
             }
         }
     }
