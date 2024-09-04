@@ -4,7 +4,7 @@
  * Contact : m.saud.zahir@gmail.com
  * 
  * 
- * Topic: Pointers
+ * Topic: C Pointers
 */
 
 #include <stdio.h>
