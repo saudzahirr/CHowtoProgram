@@ -21,14 +21,14 @@ int main(void) {
     int array[20];    // create array of 20 int elements
     int *ptr = array; // create pointer to array
 
-    printf("sizeof c = %lu\tsizeof(char) = %lu\n", sizeof(c), sizeof(char));
-    printf("sizeof s = %lu\tsizeof(short) = %lu\n", sizeof(s), sizeof(short));
-    printf("sizeof i = %lu\tsizeof(int) = %lu\n", sizeof(i), sizeof(int));
-    printf("sizeof l = %lu\tsizeof(long) = %lu\n", sizeof(l), sizeof(long));
-    printf("sizeof ll = %lu\tsizeof(long) = %lu\n", sizeof(ll), sizeof(long long));
-    printf("sizeof f = %lu\tsizeof(float) = %lu\n", sizeof(f), sizeof(float));
-    printf("sizeof d = %lu\tsizeof(double) = %lu\n", sizeof(d), sizeof(double));
-    printf("sizeof ld = %lu\tsizeof(long double) = %lu\n", sizeof(ld), sizeof(long double));
+    printf("sizeof c = %lu\tsizeof(char) = %lu\n", sizeof c, sizeof(char));
+    printf("sizeof s = %lu\tsizeof(short) = %lu\n", sizeof s, sizeof(short));
+    printf("sizeof i = %lu\tsizeof(int) = %lu\n", sizeof i, sizeof(int));
+    printf("sizeof l = %lu\tsizeof(long) = %lu\n", sizeof l, sizeof(long));
+    printf("sizeof ll = %lu\tsizeof(long) = %lu\n", sizeof ll, sizeof(long long));
+    printf("sizeof f = %lu\tsizeof(float) = %lu\n", sizeof f, sizeof(float));
+    printf("sizeof d = %lu\tsizeof(double) = %lu\n", sizeof d, sizeof(double));
+    printf("sizeof ld = %lu\tsizeof(long double) = %lu\n", sizeof ld, sizeof(long double));
     printf("sizeof int array = %lu\n", sizeof array);
     printf("sizeof int *ptr = %lu\n", sizeof ptr);
 
