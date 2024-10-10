@@ -40,7 +40,8 @@ NOTE:
     C provides the special unary operator sizeof to determine
     the size in bytes of an array (or any other data type). This
     operator is applied at compilation time, unless its operand
-    is a variable-length array.
+    is a variable-length array. The parentheses are required when
+    a type is supplied as sizeof's operand.
 
     The size of ptr will be 4 bytes on 32-bit systems and 8 bytes
     on 64-bit systems.
