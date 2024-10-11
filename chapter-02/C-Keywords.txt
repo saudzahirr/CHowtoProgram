@@ -1,0 +1,14 @@
+auto        do        goto        signed        unsigned
+break       double    if          sizeof        void
+case        else      int         static        volatile
+char        enum      long        struct        while
+const       extern    register    switch        continue
+float       return    typedef     default       for
+short       union
+
+Keywords added in C99 standard
+_Bool  _Complex   _Imaginary inline  restrict
+
+Keywords added in C11 standard
+_Alignas        _Alignof        _Atomic        _Generic        _Noreturn
+_Static_assert  _Thread_local
