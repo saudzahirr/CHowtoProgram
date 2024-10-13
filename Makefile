@@ -29,6 +29,8 @@ compile: $(FILE)
 		echo "Error: Unsupported file extension. Only .c, .cpp, .cc, or .cxx are supported."; \
 	fi
 
+	./$(OUT)
+
 # Clean the generated output
 clean:
 	rm -f $(OUT)
