@@ -18,7 +18,7 @@ endif
 # Default target: compile the source file based on suffix
 compile: $(FILE)
 	@if [ "$(FILE)" = "" ]; then \
-		echo "Error: No FILE specified. Use 'make compile FILE=filename.c or filename.cpp'"; \
+		echo "Error: No FILE specified. Use 'make compile FILE=*.c or *.cpp'"; \
 	elif echo $(FILE) | grep -E '\.c$$'; then \
 		$(CC_C) $(CFLAGS) -o $(OUT) $(FILE); \
 		echo "Compiled C file with gcc, output: $(OUT)"; \
