@@ -14,9 +14,11 @@ int main(void) {
     int *arrayPtr = array; // Equivalent to &array[0]
 
     // Pointer/Offset Notation
+    printf("%d\n", *(array + 1)); // Outputs 4
     printf("%d\n", *(arrayPtr + 1)); // Outputs 4
 
     // Pointer/Index Notation
+    printf("%d\n", array[2]); // Outputs 8
     printf("%d\n", arrayPtr[2]); // Outputs 8
 
     return 0;   
