@@ -29,6 +29,8 @@ int main(void) {
         printf("%4d", a[i]);
     }
     puts("");
+
+    return 0;
 }
 
 void bubbleSort(int * const array, const size_t size) {

@@ -36,4 +36,6 @@ int main(void) {
         printf("%4d", a[i]);
     }
     puts("");
+
+    return 0;
 }
