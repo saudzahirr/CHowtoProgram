@@ -25,9 +25,12 @@ int main(void) {
     e.ePtr = ePtr;
 
     puts("Employee Data");
-    printf("Name: %s\n", ePtr->name);
+    printf("Name: %s\n", e.name);
     printf("Age: %d\n", e.age);
     printf("Gender: %c\n", e.gender);
+
+    ePtr->salary += 500;
+    printf("Salary: %.2f\n", ePtr->salary);
 
     return 0;
 }
@@ -78,6 +81,13 @@ NOTE:
 
     A word is a memory unit used to store data in a computer—usually
     4 bytes or 8 bytes.
+
+    Structures can be initialized using initializer lists as with arrays.
+    If there are fewer initializers in the list than members in the structure,
+    the remaining members are automatically initialized to 0 (or NULL if the
+    member is a pointer). Structure variables defined outside a function definition
+    (i.e., externally) are initialized to 0 or NULL if they’re not explicitly
+    initialized in the external definition.
 
     Two operators are used to access members of structures: the structure
     member operator (.)—also called the dot operator—and the structure
