@@ -73,6 +73,15 @@ NOTE:
     type may be declared only in the structure definition not in a
     separate declaration.
 
+    The only valid operations that may be performed on structures are:
+        1. Assigning struct variables to struct variables of the same
+           type for a pointer member, this copies only the address stored
+           in the pointer.
+        2. Taking the address (&) of a struct variable.
+        3. Accessing the members of a struct variable.
+        4. Using the sizeof operator to determine the size of a struct
+           variable.
+
     Structures may not be compared using operators == and !=, because
     structure members are not necessarily stored in consecutive bytes
     of memory. Sometimes there are “holes” in a structure, because

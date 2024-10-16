@@ -25,7 +25,7 @@ int main(void) {
     printf("sizeof s = %lu\tsizeof(short) = %lu\n", sizeof s, sizeof(short));
     printf("sizeof i = %lu\tsizeof(int) = %lu\n", sizeof i, sizeof(int));
     printf("sizeof l = %lu\tsizeof(long) = %lu\n", sizeof l, sizeof(long));
-    printf("sizeof ll = %lu\tsizeof(long) = %lu\n", sizeof ll, sizeof(long long));
+    printf("sizeof ll = %lu\tsizeof(long long) = %lu\n", sizeof ll, sizeof(long long));
     printf("sizeof f = %lu\tsizeof(float) = %lu\n", sizeof f, sizeof(float));
     printf("sizeof d = %lu\tsizeof(double) = %lu\n", sizeof d, sizeof(double));
     printf("sizeof ld = %lu\tsizeof(long double) = %lu\n", sizeof ld, sizeof(long double));
