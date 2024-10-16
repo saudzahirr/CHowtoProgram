@@ -43,7 +43,7 @@ NOTE:
     creating synonyms (or aliases) for previously
     defined data types.
 
-    C programmers ofter use typedef to define a
+    C programmers often use typedef to define a
     structure type, so a structure tag is not
     required. For example:
 
