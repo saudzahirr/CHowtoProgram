@@ -1,0 +1,17 @@
+Operator                                   | Associativity     | Type
+-------------------------------------------|-------------------|--------------------
+()  []  .  ->  ++ (postfix) -- (postfix)   | left to right     | highest
++  -  ++  --  !  &  *  ~ sizeof(type)      | right to left     | unary
+*  /  %                                    | left to right     | multiplicative
++  -                                       | left to right     | additive
+<<  >>                                     | left to right     | shifting
+<  <=  >  >=                               | left to right     | relational
+==  !=                                     | left to right     | equality
+&                                          | left to right     | bitwise AND
+^                                          | left to right     | bitwise XOR
+|                                          | left to right     | bitwise OR
+&&                                         | left to right     | logical AND
+||                                         | left to right     | logical OR
+?:                                         | right to left     | conditional
+=  +=  -=  *=  /=  &=  |=  ^= <<=  >>=  %= | right to left     | assignment
+,                                          | left to right     | comma
