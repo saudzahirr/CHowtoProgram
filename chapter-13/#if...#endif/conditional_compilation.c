@@ -34,7 +34,11 @@
 
 int main(void) {
     INFO("C How to Program");
-    DEBUG(EDITION);
+
+    #ifdef EDITION
+        DEBUG(EDITION);
+    #endif
+
     WARN("...");
     ERROR("...");
 
