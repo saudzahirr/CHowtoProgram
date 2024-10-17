@@ -1,0 +1,14 @@
+The C preprocessor executes before a program is compiled.
+Some actions it performs are:
+    1. the inclusion of other files into the file being compiled,
+    2. definition of symbolic constants and macros,
+    3. conditional compilation of program code and
+    4. conditional execution of preprocessor directives.
+
+Preprocessor directives begin with #, and only whitespace characters
+and comments delimited by /* and */ may appear before a preprocessor
+directive on a line. C has perhaps the largest installed base of
+“legacy code” of any modern programming language. It’s been in active
+use for more than four decades. As a professional C programmer, you’re
+likely to encounter code written many years ago using older programming
+techniques.

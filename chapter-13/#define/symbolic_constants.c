@@ -24,7 +24,7 @@ NOTE:
     The #define directive format is
 
             #define identifier replacement-text
-    
+
     When this line appears in a file, all subsequent occurrences
     of identifier that do not appear in string literals or comments
     will be replaced by replacement text automatically before the
@@ -35,4 +35,6 @@ NOTE:
     replaces all subsequent occurrences of the symbolic constant PI
     with the numeric constant 3.141593. Symbolic constants enable you
     to create a name for a constant and use the name throughout the program.
+
+    Attempting to redefine a symbolic constant with a new value is an error.
 */
