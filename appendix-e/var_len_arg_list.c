@@ -7,7 +7,7 @@
 */
 
 
-#include "stdio.h"
+#include <stdio.h>
 
 #define DEBUG(...) printf(__TIME__ " DEBUG : " __VA_ARGS__)
 #define INFO(...) printf(__TIME__ " INFO : " __VA_ARGS__)
