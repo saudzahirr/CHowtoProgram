@@ -27,8 +27,6 @@ typedef struct {
 typedef const Circle *const cPtrConst;
 typedef const Rectangle *const rPtrConst;
 
-static const double PI = 3.141592;
-
 extern _Bool is_height;
 extern _Bool is_width;
 

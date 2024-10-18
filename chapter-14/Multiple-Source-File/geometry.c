@@ -17,6 +17,7 @@
 _Bool is_height = 0;
 _Bool is_width = 0;
 
+static const double PI = 3.141592;
 
 void computeCircleArea(Circle *circle) {
     circle->area = PI * circle->radius * circle->radius;
