@@ -7,7 +7,6 @@
  * Topic: Compiling Multiple-Source-File Programs
  */
 
-#include <stdio.h>
 #include "geometry.h"
 
 #ifndef DEBUG
