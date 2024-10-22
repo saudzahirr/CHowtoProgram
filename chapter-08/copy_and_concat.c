@@ -33,7 +33,7 @@ int main(void) {
     printf("%s\n", dest);
 
     // strncat
-    strncat(dest, source, 8);
+    strncat(dest, source, 4);
     printf("%s\n", dest);
 
     return 0;
