@@ -42,7 +42,7 @@ int main(void) {
     if (value != NULL) {
         printf("First occurrence of any character from '%s' in '%s' is: '%c'\n",
                 chars, string, *value);
-        printf("Remaining string: '%s'\n", value);
+        printf("Remaining string: '%s'\n", value); // Outputs: llo, World!
     }
     else {
         printf("No characters from '%s' found in '%s'.\n", chars, string);
@@ -60,7 +60,7 @@ int main(void) {
     }
 
     // Function strspn
-    len = strspn(string, "lHeo "); // Stops when a character in first string is not second
+    len = strspn(string, "lHeo "); // Stops when a character in first string is not in second
     printf("Length: %zu\n", len); // Output: 5
 
     len = strspn(string, "W");
