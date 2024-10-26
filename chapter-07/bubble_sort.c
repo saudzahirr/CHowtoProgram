@@ -34,7 +34,7 @@ int main(void) {
 }
 
 void bubbleSort(int * const array, const size_t size) {
-    void swap(int *, int *);
+    void swap(int *, int *); // prototype
     // bubble sort
     for (unsigned int pass = 1; pass < SIZE; pass++) {
         for (size_t i = 0; i < SIZE - 1; i++) {
@@ -50,3 +50,11 @@ void swap(int *aPtr, int *bPtr) {
     *aPtr = *bPtr;
     *bPtr = temp;
 }
+
+/*
+NOTE:
+    Placing function prototypes in the definitions of other
+    functions enforces the principle of least priviledge by
+    restricting proper function calls to the functions in which
+    the prototypes appear.
+*/

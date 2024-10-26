@@ -22,7 +22,7 @@ int main() {
         case 0:
             printf("%d is even number", number);
             break;
-        
+
         default:
             printf("%d is odd number", number);
             break;
