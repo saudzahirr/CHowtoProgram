@@ -23,10 +23,17 @@ int main() {
 
 /*
 NOTE:
+    A key preprocessor addition is variable-length
+    argument lists for macros. This allows for macro
+    wrappers around functions like printf.
+
     The identifier __VA_ARGS__, which begins and ends
     with two under-scores, is a placeholder for the
     variable-length argument list.
     The DEBUG macro (wrapper around function printf)
     takes a variable number of arguments, as indicated
     by the ... in the argument list.
+
+    Also strings separated by whitespace are concatenated
+    during preprocessing.
 */
