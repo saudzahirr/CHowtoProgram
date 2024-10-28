@@ -31,7 +31,12 @@ compile: $(FILE)
 		echo "Error: Unsupported file extension. Only .c, .cpp, .cc, or .cxx are supported."; \
 	fi
 
-	./$(OUT)
+	# Run the output file and check if it terminated with exit code 1
+	./$(OUT); \
+	EXIT_CODE=$$?; \
+	if [ $$EXIT_CODE -ne 0 ]; then \
+		echo "Warning: Program terminated with exit code $$EXIT_CODE"; \
+	fi
 
 # Clean the generated output
 clean:
