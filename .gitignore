@@ -1,6 +1,9 @@
 # VSCode
 .vscode
 
+# Data files
+*.dat
+
 # Prerequisites
 *.d
 

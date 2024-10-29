@@ -17,8 +17,8 @@ Streams provide communication channels between files and programs.
 Opening a file returns a pointer to a FILE structure (defined in <stdio.h>)
 that contains information used to process the file. In some operating systems,
 this structure includes a file descriptor, i.e., an integer index into an
-operating-system array called the open file table. Each array element contains
-a file control block (FCB)—information that the operating system uses to administer
+operating-system array called the 'open file table'. Each array element contains
+a 'file control block' (FCB)—information that the operating system uses to administer
 a particular file. The standard input, standard output and standard error are
 manipulated using stdin, stdout and stderr.
 
