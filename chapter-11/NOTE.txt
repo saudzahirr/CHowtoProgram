@@ -1,0 +1,38 @@
+C views each file simply as a sequential stream of bytes.
+Each file ends either with an end-of-file marker or at a
+specific byte number recorded in a system-maintained,
+administrative data structure—this is determined by each
+platform and is hidden from you.
+
+When a file is opened, a stream is associated with it.
+Three streams are automatically opened when program execution
+begins:
+
+    1. the standard input (which receives input from the keyboard),
+    2. the standard output (which displays output on the screen) and
+    3. the standard error (which displays error messages on the screen).
+
+Streams provide communication channels between files and programs.
+
+Opening a file returns a pointer to a FILE structure (defined in <stdio.h>)
+that contains information used to process the file. In some operating systems,
+this structure includes a file descriptor, i.e., an integer index into an
+operating-system array called the open file table. Each array element contains
+a file control block (FCB)—information that the operating system uses to administer
+a particular file. The standard input, standard output and standard error are
+manipulated using stdin, stdout and stderr.
+
+Function fgetc, like getchar, reads one character from a file. Function fgetc
+receives as an argument a FILE pointer for the file from which a character will
+be read. The call fgetc(stdin) reads one character from stdin—the standard input.
+This call is equivalent to the call getchar().
+
+Function fputc, like putchar, writes one character to a file. Function fputc receives
+as arguments a character to be written and a pointer for the file to which the
+character will be written. The function call fputc('a', stdout) writes the character
+'a' to stdout—the standard output. This call is equivalent to putchar('a').
+
+The fgets and fputs functions, for instance, can be used to read a line from a file
+and write a line to a file, respectively. The file-processing equivalents of functions
+scanf and printf—fscanf and fprintf. Functions fread and fwrite are used to write blocks
+of data.
