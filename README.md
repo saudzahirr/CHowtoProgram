@@ -42,6 +42,17 @@ C How to Program, with an introduction to C++.
 ### [Chapter 14](chapter-14)
 - **Other C Topics**: Redirecting input `<` and output `>`, pipe `|`, variable-length argument lists `...`, command line arguments `argv`, compiling multiple source file programs using `extern`, `static` and Makefile. Use of `exit`, `atexit`, suffixes, signal handling, dynamic memory allocation using `calloc` and `realloc`. Unconditional branching using `break` and `goto` statement.
 
+### [Appendix E](appendix-e)
+- *Designated initializers and compound literals*
+- *Complex numbers*
+- *Empty arguments in a macro*
+- `__VA_ARGS__` *identifier and variable-length argument lists for macros*
+- `__func__` *predefined Identifier*
+- *Inline functions using keyword* `inline`
+- *Keyword* `restrict`
+- `_Noreturn` *function specifier*
+- *Static assertions using* `_Static_assert`
+- *Type-generic expressions using* `_Generic`
 
 ## Program Compilation
 
