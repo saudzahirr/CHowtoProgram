@@ -1,22 +1,6 @@
 # C How to Program
 C How to Program, with an introduction to C++.
 
-## Program Compilation
-
-To compile C or C++ code, use the following command. For execution, run `a.exe` on Windows and `./a.out` on Unix.
-
-```bash
-make compile FILE=<filename>
-```
-
-## Clean
-
-To clean up build binaries, use the following command:
-
-```bash
-make clean
-```
-
 ## Contents
 
 ### [Chapter 02](chapter-02)
@@ -57,3 +41,20 @@ make clean
 
 ### [Chapter 14](chapter-14)
 - **Other C Topics**: Redirecting input `<` and output `>`, pipe `|`, variable-length argument lists `...`, command line arguments `argv`, compiling multiple source file programs using `extern`, `static` and Makefile. Use of `exit`, `atexit`, suffixes, signal handling, dynamic memory allocation using `calloc` and `realloc`. Unconditional branching using `break` and `goto` statement.
+
+
+## Program Compilation
+
+To compile C or C++ code, use the following command. For execution, run `a.exe` on Windows and `./a.out` on Unix.
+
+```bash
+make compile FILE=<filename>
+```
+
+## Clean
+
+To clean up build binaries, use the following command:
+
+```bash
+make clean
+```
