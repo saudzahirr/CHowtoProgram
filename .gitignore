@@ -3,6 +3,8 @@
 
 # Data files
 *.dat
+*.bin
+*.db
 
 # Prerequisites
 *.d
