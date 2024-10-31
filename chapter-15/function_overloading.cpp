@@ -14,8 +14,7 @@ using namespace std;
 int square(int);
 double square(double);
 
-int main()
-{
+int main() {
     cout << square(7); // calls int version
     cout << endl;
     cout << square(7.5); // calls double version

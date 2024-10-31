@@ -1,5 +1,10 @@
-# VSCode
-.vscode
+# VSCode settings
+.vscode/
+
+# Assembly files
+*.s
+*.S
+*.asm
 
 # Data files
 *.dat
@@ -7,14 +12,14 @@
 *.db
 
 # Prerequisites
-*.d
+*.d       # Dependency files
 
 # Compiled Object files
+*.o
+*.obj
 *.slo
 *.lo
-*.o
 *.ko
-*.obj
 *.elf
 
 # Linker output
@@ -37,7 +42,6 @@
 *.so
 *.so.*
 *.dylib
-*.dll
 
 # Fortran module files
 *.mod
@@ -71,3 +75,20 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Build directories (common names)
+build/
+Build/
+BUILD/
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+*.cmake
+
+# Makefiles and Ninja build artifacts
+Makefile
+makefile
+*.mk
+*.d
+.ninja
