@@ -14,14 +14,16 @@ using namespace std;
 
 class GradeBook {
     public:
-        void displayMessage(const string &message) const {
-            cout << message << endl;
+        void displayMessage(const string &courseName) const {
+            cout << courseName << endl;
         }
 };
 
 int main() {
     GradeBook gradeBook;
-    gradeBook.displayMessage("C++ How to Program");
+    string nameOfCourse;
+    getline(cin, nameOfCourse); // equivalent of fgets in C
+    gradeBook.displayMessage(nameOfCourse);
 }
 
 /*
@@ -31,4 +33,12 @@ NOTE:
     object of the C++ Standard Library class string. This class
     is defined in header <string>, and the name string, like cout,
     belongs to namespace std.
+
+    The function call getline(cin, nameOfCourse) reads characters (including
+    the space characters that separate the words in the input) from the standard
+    input stream object cin (i.e., the keyboard) until the newline character is
+    encountered, places the characters in the string variable nameOfCourse and
+    discards the newline character. When you press Enter while entering data, a
+    newline is inserted in the input stream. The <string> header must be included
+    in the program to use function getline, which belongs to namespace std.
 */
