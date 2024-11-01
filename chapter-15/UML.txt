@@ -48,4 +48,3 @@ The Unified Modeling Language
     capable of being enhanced with new features) and is independent of any particular OOAD process. UML modelers are
     free to use various processes in designing systems, but all developers can now express their designs with one standard
     set of graphical notations. For more information, visit UML Resource Center at www.deitel.com/UML/.
-    
