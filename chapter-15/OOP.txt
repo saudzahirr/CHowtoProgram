@@ -1,0 +1,79 @@
+Basic Object Technology Concepts
+
+Objects
+    Everywhere you look in the real world you see objects—people, animals, plants, cars,
+    planes, buildings, computers and so on. Humans think in terms of objects. Telephones,
+    houses, traffic lights, microwave ovens and water coolers are just a few more objects
+    we see around us every day.
+
+Attributes and Behaviors
+    Objects have some things in common. They all have "attributes" (e.g., size, shape, color and
+    weight), and they all exhibit "behaviors" (e.g., a ball rolls, bounces, inflates and deflates;
+    a baby cries, sleeps, crawls, walks and blinks; a car accelerates, brakes and turns; a towel
+    absorbs water). Humans learn about existing objects by studying their attributes and observing
+    their behaviors. Different objects can have similar attributes and can exhibit similar behaviors.
+    Comparisons can be made, for example, between babies and adults and between humans and chimpanzees.
+
+Object-Oriented Design and Inheritance
+    Object-oriented design (OOD) models software in terms similar to those that people use to describe
+    real-world objects. It takes advantage of class relationships, where objects of a certain class,
+    such as a class of vehicles, have the same characteristics—cars, trucks, little red wagons and roller
+    skates have much in common. OOD takes advantage of 'inheritance' relationships, where new classes of
+    objects are derived by absorbing characteristics of existing classes and adding unique characteristics
+    of their own. An object of class “convertible” certainly has the characteristics of the more general
+    class “automobile,” but more specifically, the roof goes up and down.
+
+    Object-oriented design provides a natural and intuitive way to view the software design process—namely,
+    modeling objects by their attributes, behaviors and interrelationships just as we describe real-world
+    objects. OOD also models communication between objects. Just as people send messages to one another (e.g.,
+    a sergeant commands a soldier to stand at attention), objects also communicate via messages. A bank account
+    object may receive a message to decrease its balance by a certain amount because the customer has withdrawn
+    that amount of money.
+
+Encapsulation and Information Hiding
+    OOD "encapsulates" (i.e., wraps) attributes and "operations" (behaviors) into objects—an
+    object’s attributes and operations are intimately tied together. Objects have the property
+    of "information hiding". This means that objects may know how to communicate with one
+    another across well-defined "interfaces", but normally they’re not allowed to know how other
+    objects are implemented—implementation details are hidden within the objects themselves. We
+    can drive a car effectively, for instance, without knowing the details of how engines, transmissions,
+    brakes and exhaust systems work internally—as long as we know how to use the accelerator pedal, the
+    brake pedal, the steering wheel and so on. Information hiding, is crucial to good software engineering.
+
+Object-Oriented Programming
+    Languages like C++ are "object oriented". Programming in such a language is called object-
+    oriented programming (OOP), and it allows you to implement an object-oriented design
+    as a working software system. Languages like C, on the other hand, are "procedural", so pro-
+    gramming tends to be action oriented. In C, the unit of programming is the function. In
+    C++, the unit of programming is the “class” from which objects are eventually "instantiated"
+    (an OOP term for “created”). C++ classes contain functions that implement operations
+    and data that implements attributes.
+
+    C programmers concentrate on writing functions. Programmers group actions that
+    perform some common task into functions, and group functions to form programs. Data
+    is certainly important in C, but the view is that data exists primarily in support of the
+    actions that functions perform. The verbs in a system specification help you determine the
+    set of functions that will work together to implement the system.
+
+Classes, Data Members and Member Functions
+    C++ programmers concentrate on creating their own user-defined types called classes.
+    Each class contains data as well as the set of functions that manipulate that data and
+    provide services to "clients" (i.e., other classes or functions that use the class). The data
+    components of a class are called "data members". For example, a bank account class might include
+    an account number and a balance. The function components of a class are called "member functions"
+    (typically called "methods" in other object-oriented programming languages such as Java). For
+    example, a bank account class might include member functions to make a deposit (increasing the
+    balance), make a withdrawal (decreasing the balance) and inquire what the current balance is.
+    You use built-in types (and other user-defined types) as the “building blocks” for constructing
+    new user-defined types (classes). The nouns in a system pecification help the C++ programmer
+    determine the set of classes from which objects are created that work together to implement the system.
+
+    Classes are to objects as blueprints are to houses—a class is a “plan” for building an
+    object of the class. Just as we can build many houses from one blueprint, we can instantiate
+    (create) many objects from one class. You cannot cook meals in the kitchen of a blueprint;
+    you can cook meals in the kitchen of a house. You cannot sleep in the bedroom of a blue-
+    print; you can sleep in the bedroom of a house.
+    Classes can have relationships with other classes. In an object-oriented design of a
+    bank, the “bank teller” class relates to other classes, such as the “customer” class, the “cash
+    drawer” class, the “safe” class, and so on. These relationships are called "associations". Pack-
+    aging software as classes makes it possible for future software systems to "reuse" the classes.

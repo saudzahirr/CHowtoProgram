@@ -1,0 +1,51 @@
+The Unified Modeling Language™ (UML™)—a graphical language that
+allows people who design object-oriented software systems to use
+an industry-standard notation to represent them.
+
+Object-Oriented Analysis and Design
+    How will you create the code for your programs? Perhaps, like many beginning programmers,
+    you’ll simply turn on your computer and start typing. This approach may work for small programs,
+    but what if you were asked to create a software system to control thousands of automated teller
+    machines for a major bank? Or what if you were asked to work on a team of 1000 software developers
+    building the next generation of the U.S. air traffic control system? For projects so large and
+    complex, you could not simply sit down and start writing programs. To create the best solutions,
+    you should follow a detailed process for "analyzing" your project’s "requirements" (i.e., determining
+    what the system is supposed to do) and developing a "design" that satisfies them (i.e., deciding how
+    the system should do it). Ideally, you would go through this process and carefully review the design
+    (or have your design reviewed by other software professionals) before writing any code. If this process
+    involves analyzing and designing your system from an object-oriented point of view, it’s called
+    "object-oriented analysis and design" (OOAD). Experienced programmers know that analysis and design can
+    save many hours by helping avoid an ill-planned system development approach that has to be abandoned
+    partway through its implementation, possibly wasting considerable time, money and effort.
+
+    OOAD is the generic term for the process of analyzing a problem and developing an approach for solving it.
+    Small problems like the ones discussed in the next few chapters do not require an exhaustive OOAD process.
+    As problems and the groups of people solving them increase in size, the methods of OOAD quickly become more
+    appropriate than pseudocode. Ideally, a group should agree on a strictly defined process for solving its
+    problem and a uniform way of communicating the results of that process to one another. Although many different
+    OOAD processes exist, a single graphical language for communicating the results of any OOAD process has come
+    into wide use. This language, known as the Unified Modeling Language (UML), was developed in the mid-1990s under
+    the initial direction of three software methodologists: Grady Booch, James Rumbaugh and Ivar Jacobson.
+
+The Unified Modeling Language
+    In the 1980s, increasing numbers of organizations began using OOP to build their applications, and a need
+    developed for a standard OOAD process. Many methodologists—including Booch, Rumbaugh and Jacobson—individually
+    produced and promoted separate processes to satisfy this need. Each process had its own notation, or “language”
+    (in the form of graphical diagrams), to convey the results of analysis and design. In 1994, James Rumbaugh joined
+    Grady Booch at Rational Software Corporation (now a division of IBM), and the two began working to unify their
+    popular processes. They soon were joined by Ivar Jacobson. In 1996, the group released early versions of the UML
+    to the software engineering community and requested feedback. Around the same time, an organization known as the
+    Object Management Group™ (OMG™) invited submissions for a common modeling language. The OMG (www.omg.org) is a
+    nonprofit organization that promotes the standardization of object-oriented technologies by issuing guidelines
+    and specifications, such as the UML. Several corporations—among them HP, IBM, Microsoft, Oracle and Rational
+    Software—had already recognized the need for a common modeling language. In response to the OMG’s request for
+    proposals, these companies formed UML Partners—the consortium that developed the UML version 1.1 and submitted it
+    to the OMG. The OMG accepted the proposal and, in 1997, assumed responsibility for the continuing maintenance and
+    revision of the UML. We present the terminology and notation of the current version of the UML—UML version 2—
+    throughout the C++ section of this book. The Unified Modeling Language is now the most widely used graphical
+    representation scheme for modeling object-oriented systems. Those who design systems use the language (in the form
+    of diagrams) to model their systems. An attractive feature of the UML is its flexibility. The UML is extensible (i.e.,
+    capable of being enhanced with new features) and is independent of any particular OOAD process. UML modelers are
+    free to use various processes in designing systems, but all developers can now express their designs with one standard
+    set of graphical notations. For more information, visit UML Resource Center at www.deitel.com/UML/.
+    
