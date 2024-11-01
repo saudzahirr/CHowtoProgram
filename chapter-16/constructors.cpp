@@ -14,6 +14,7 @@ using namespace std;
 
 class GradeBook {
     public:
+        // constructor
         explicit GradeBook(string name): courseName(name) {}
 
         // mutator
