@@ -172,3 +172,26 @@ void freeList(LinkedListPtr *sPtr) {
 
     puts("All nodes have been freed.\n");
 }
+
+/*
+NOTE:
+    A linked list is a linear collection of self-referential structures, called nodes,
+    connected by pointer links—hence, the term “linked” list. A linked list is accessed
+    via a pointer to the first node of the list. Subsequent nodes are accessed via the
+    link pointer member stored in each node. By convention, the link pointer in the last
+    node of a list is set to NULL to mark the end of the list. Data is stored in a linked
+    list dynamically—each node is created as necessary. A node can contain data of any type
+    including other structs. Stacks and queues are also linear data structures, and constrained
+    versions of linked lists. Trees are nonlinear data structures.
+
+    Lists of data can be stored in arrays, but linked lists provide several advantages. A
+    linked list is appropriate when the number of data elements to be represented in the data
+    structure is unpredictable. Linked lists are dynamic, so the length of a list can increase
+    or decrease at execution time as necessary. The size of an array created at compile time,
+    however, cannot be altered. Arrays can become full. Linked lists become full only when the
+    system has insufficient memory to satisfy dynamic storage allocation requests.
+
+    Linked lists can be maintained in sorted order by inserting each new element at the proper
+    point in the list. Linked-list nodes are normally not stored contiguously in memory. Logically,
+    however, the nodes of a linked list appear to be contiguous.
+*/
