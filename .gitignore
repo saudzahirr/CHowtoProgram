@@ -87,8 +87,6 @@ CMakeCache.txt
 *.cmake
 
 # Makefiles and Ninja build artifacts
-Makefile
-makefile
 *.mk
 *.d
 .ninja
