@@ -7,14 +7,25 @@
  * Topic: Throwing Exceptions
  */
 
+#include <iostream>
+#include <stdexcept>
+
 #include "Time.h"
+
+using namespace std;
 
 int main() {
     Time time;
     time.setTime(12, 12, 12);
     time.displayUniversal();
     time.display();
-    // time.setTime(40, 12, 12);
+
+    try {
+        time.setTime(40, 12, 12);
+    }
+    catch (invalid_argument &e) {
+        cout << "Exception: " << e.what() << endl;
+    }
 }
 
 /*
@@ -41,4 +52,20 @@ NOTE:
     If a member function is defined in a class’s body, the member function is implicitly
     declared inline. Remember that the compiler reserves the right not to inline any
     function.
+
+    Often, classes do not have to be created “from scratch.” Rather, they can include
+    objects of other classes as members or they may be derived from other classes that
+    provide attributes and behaviors the new classes can use. Such software reuse can
+    greatly enhance productivity and simplify code maintenance. Including class objects
+    as members of other classes is called "composition" (or "aggregation"). Deriving new
+    classes from existing classes is called "inheritance".
+
+    People new to object-oriented programming often suppose that objects must be quite
+    large because they contain data members and member functions. Logically, this is
+    true—you may think of objects as containing data and functions (and our discussion
+    has certainly encouraged this view); physically, however, this is not true.
+
+    Objects contain only data, so objects are much smaller than if they also contained
+    member functions. The compiler creates one copy (only) of the member functions
+    separate from all objects of the class. All objects of the class share this one copy.
 */
