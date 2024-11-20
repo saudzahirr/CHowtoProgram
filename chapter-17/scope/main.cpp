@@ -51,4 +51,14 @@ NOTE:
     a reference to an object to access the object’s members. The arrow member
     selection operator (->) is preceded by a pointer to an object to access the
     object’s members.
+
+
+    C++11: Using List Initializers to Call Constructors
+
+    C++11 now provides a uniform initialization syntax called list initializers
+    that can be used to initialize any variable.
+
+    Account account{"Bob", 543.21};
+
+    The form without the = is preferred.
 */

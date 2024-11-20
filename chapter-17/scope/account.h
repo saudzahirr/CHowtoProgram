@@ -46,3 +46,22 @@ class Account {
 };
 
 #endif
+
+/*
+NOTE:
+    Access Functions
+
+    Access functions can read or display data. Another common use for access
+    functions is to test the truth or falsity of conditions—such functions are
+    often called predicate functions. For instance, isEmpty and isFull function.
+
+
+    Utility Functions
+
+    A utility function (also called a helper function) is a private member
+    function that supports the operation of a class’s other member functions.
+    Utility functions are declared private because they’re not intended for
+    use by the class’s clients. A common use of a utility function would be to
+    place in a function some common code that would otherwise be duplicated in
+    several other member functions.
+*/
