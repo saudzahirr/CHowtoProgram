@@ -19,9 +19,9 @@ class Time {
         // explicit Time(int = 0, int = 0, int = 0); // default constructor
 
         // Overloaded constructors with delegation:
-        explicit Time() : Time(0, 0, 0) {}
-        explicit Time(int hour) : Time(hour, 0, 0) {}
-        explicit Time(int hour, int minute) : Time(hour, minute, 0) {}
+        explicit Time(): Time(0, 0, 0) {}
+        explicit Time(int hour): Time(hour, 0, 0) {}
+        explicit Time(int hour, int minute): Time(hour, minute, 0) {}
         explicit Time(int hour, int minute, int second);
 
         /**
