@@ -60,5 +60,7 @@ NOTE:
 
     Account account{"Bob", 543.21};
 
+    Account account = {"Bob", 543.21}; // copy-list-initialization cannot use a constructor marked 'explicit'
+
     The form without the = is preferred.
 */
