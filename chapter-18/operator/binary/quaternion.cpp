@@ -1,10 +1,10 @@
 /*
  * Author  : Saud Zahir
- * Date    : November 22, 2024
+ * Date    : November 24, 2024
  * Contact : m.saud.zahir@gmail.com
  *
  *
- * Topic: friend Functions and friend Classes
+ * Topic: Overloading Binary Operators
  */
 
 #include <iostream>
@@ -68,31 +68,16 @@ void Quaternion::show() const {
               << std::endl;
 }
 
-// Friend Function
-Quaternion add(const Quaternion& q1, const Quaternion& q2) {
+/**
+ * Friend Function & Binary Operator Overloading
+ */
+Quaternion operator+(const Quaternion& q1, const Quaternion& q2) {
     Quaternion q(q1.x + q2.x, q1.y + q2.y, q1.z + q2.z, q1.w + q2.w);
 
     return q;
 }
 
-// Friend Class Member Functions
-Quaternion QuaternionOperations::neg(const Quaternion& q) {
-    Quaternion _q(
-        -q.x,
-        -q.y,
-        -q.z,
-        -q.w
-    );
-
-    return _q;
-}
-
-Quaternion QuaternionOperations::sub(const Quaternion& q1, const Quaternion& q2) {
-    Quaternion _q = neg(q2);
-    return add(q1, _q);
-}
-
-Quaternion QuaternionOperations::mul(const Quaternion& q1, const Quaternion& q2) {
+Quaternion operator*(const Quaternion& q1, const Quaternion& q2) {
     int x = (q1.x * q2.x) - (q1.y * q2.y + q1.z * q2.z + q1.w * q2.w);
     int y = (q1.x * q2.y) + (q1.y * q2.x) + (q1.z * q2.w) - (q1.w * q2.z);
     int z = (q1.x * q2.z) - (q1.y * q2.w) + (q1.z * q2.x) + (q1.w * q2.y);

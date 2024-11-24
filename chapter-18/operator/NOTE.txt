@@ -1,0 +1,79 @@
+Fundamentals of Operator Overloading
+
+Although C++ does not allow new operators to be created, it does allow most
+existing operators to be overloaded so that, when they’re used with objects,
+they have meaning appropriate to those objects. Operator overloading is not
+automatic—you must write operator-overloading functions to perform the desired
+operations. An operator is overloaded by writing a non-static member function
+definition or non-member function definition as you normally would, except that
+the function name starts with the keyword "operator" followed by the symbol for
+the operator being overloaded. When operators are overloaded as member functions,
+they must be non-static, because they must be called on an object of the class
+and operate on that object.
+
+To use an operator on an object of a class, you must define overloaded operator
+functions for that class—with three exceptions:
+
+    1. The assignment operator (=) may be used with most classes to perform
+        memberwise assignment of the data members—each data member is assigned
+        from the assignment’s “source” object (on the right) to the “target”
+        object (on the left). Memberwise assignment is dangerous for classes
+        with pointer members, so explicitly overload the assignment operator
+        for such classes.
+
+    2. The address (&) operator returns a pointer to the object; this operator
+        also can be overloaded.
+
+    3. The comma operator evaluates the expression to its left then the expression
+        to its right, and returns the value of the latter expression. This operator
+        also can be overloaded.
+
+Most of C++’s operators can be overloaded. Except following operators that
+cannot be overloaded:
+
+    . (dot operator)
+    .* (pointer to member)
+    :: (scope resolution)
+    ?: (ternary operator)
+
+
+Rules and Restrictions on Operator Overloading
+
+As you prepare to overload operators for your own classes, there are several rules
+and restrictions you should keep in mind:
+
+    1. The precedence of an operator cannot be changed by overloading. However,
+        parentheses can be used to force the order of evaluation of overloaded
+        operators in an expression.
+
+    2. The associativity of an operator cannot be changed by overloading—if an
+        operator normally associates from left to right, then so do all of its
+        overloaded versions.
+
+    3. You cannot change the “arity” of an operator (that is, the number of operands
+        an operator takes)—overloaded unary operators remain unary operators; overloaded
+        binary operators remain binary operators. Operators &, *, + and - all have
+        both unary and binary versions; these unary and binary versions can be separately
+        overloaded.
+
+    4. You cannot create new operators; only existing operators can be overloaded.
+
+    5. The meaning of how an operator works on values of fundamental types cannot be
+        changed by operator overloading. For example, you cannot make the + operator
+        subtract two ints. Operator overloading works only with objects of user-defined
+        types or with a mixture of an object of a user-defined type and an object of a
+        fundamental type.
+
+    6. Related operators, like + and +=, must be overloaded separately.
+
+    7. When overloading (), [], -> or any of the assignment operators, the operator
+    overloading function must be declared as a class member. For all other overloadable
+    operators, the operator overloading functions can be member functions or non-member
+    functions.
+
+
+
+NOTE:
+    Although it’s possible to overload the address (&), comma (,), && and || operators,
+    you should avoid doing so to avoid subtle errors. For insights on this, see CERT
+    guideline DCL10-CPP.
