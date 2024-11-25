@@ -27,7 +27,9 @@ int main() {
         qPtrs[i].setW(i);
         qPtrs[i].show();
     }
+
     delete[] qPtrs;
+    qPtrs = nullptr;
 }
 
 /*
