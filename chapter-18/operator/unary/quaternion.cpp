@@ -1,10 +1,10 @@
 /*
  * Author  : Saud Zahir
- * Date    : November 24, 2024
+ * Date    : November 25, 2024
  * Contact : m.saud.zahir@gmail.com
  *
  *
- * Topic: Overloading Binary Operators
+ * Topic: Overloading Unary Operators
  */
 
 #include <iostream>
@@ -68,9 +68,49 @@ void Quaternion::show() const {
               << std::endl;
 }
 
+// Unary Operator Overloading
+Quaternion& Quaternion::operator++() {
+    ++this->x;
+    ++this->y;
+    ++this->z;
+    ++this->w;
+
+    return *this;
+}
+
+Quaternion& Quaternion::operator--() {
+    --this->x;
+    --this->y;
+    --this->z;
+    --this->w;
+
+    return *this;
+}
+
+Quaternion Quaternion::operator++(int) {
+    Quaternion temp = *this;
+    ++this->x;
+    ++this->y;
+    ++this->z;
+    ++this->w;
+
+    return temp;
+}
+
+Quaternion Quaternion::operator--(int) {
+    Quaternion temp = *this;
+    --this->x;
+    --this->y;
+    --this->z;
+    --this->w;
+
+    return temp;
+}
+
 /**
- * Friend Function & Binary Operator Overloading
+ * Friend Function
  */
+// Binary Operator Overloading
 Quaternion operator+(const Quaternion& q1, const Quaternion& q2) {
     Quaternion q(q1.x + q2.x, q1.y + q2.y, q1.z + q2.z, q1.w + q2.w);
 
