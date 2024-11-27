@@ -18,7 +18,7 @@ class Employee {
         /**
          * Constructor
          */
-        explicit Employee(std::string, unsigned int, std::string, double);
+        Employee(std::string, unsigned int, std::string, double);
 
         /**
          * Destructor

@@ -17,7 +17,7 @@ class Account {
         /**
          * Constructor
          */
-        explicit Account(std::string, double);
+        Account(std::string, double);
 
         /**
          * Destructor

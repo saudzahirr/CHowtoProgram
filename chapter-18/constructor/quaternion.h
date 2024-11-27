@@ -15,7 +15,7 @@ class Quaternion {
         /**
          * Constructor
          */
-        explicit Quaternion(int = 1, int = 1, int = 1, int = 1); // default constructor
+                Quaternion(int = 1, int = 1, int = 1, int = 1); // default constructor
         Quaternion(const Quaternion&); // copy constructor
         // delete default constructor
         Quaternion() = delete;

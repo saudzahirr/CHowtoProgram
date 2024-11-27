@@ -1,0 +1,62 @@
+* Operators as Member vs. Non-Member Functions
+
+When an operator function is implemented as a member function, the leftmost
+(or only) operand must be an object (or a reference to an object) of the
+operator’s class. If the left operand must be an object of a different class
+or a fundamental type, this operator function must be implemented as a non-member
+function. A non-member operator function can be made a friend of a class if that
+function must access private or protected members of that class directly.
+
+Another reason why you might choose a non-member function to overload an operator
+is to enable the operator to be commutative. Thus, we require the addition operator
+to be commutative (exactly as it is with two fundamental-type operands). The problem
+is that the class object must appear on the left of the addition operator if that operator
+is to be overloaded as a member function. So, we also overload the operator as a non-member
+function to allow the Quaternion to appear on the right of the addition. The operator+
+function that deals with the Quaternion on the left can still be a member function. The
+non-member function can simply swap its arguments and call the member function.
+
+
+
+
+* explicit Constructors and Conversion Operators
+
+Recall that we’ve been declaring as explicit every constructor that can be called with one
+argument. With the exception of copy constructors, any constructor that can be called with
+a single argument and is not declared explicit can be used by the compiler to perform an
+implicit conversion. The constructor’s argument is converted to an object of the class in
+which the constructor is defined. The conversion is automatic and you need not use a cast
+operator. In some situations, implicit conversions are undesirable or error-prone.
+
+Common Programming Error:
+Unfortunately, the compiler might use implicit conversions in cases that you do not expect,
+resulting in ambiguous expressions that generate compilation errors or result in execution-
+time logic errors.
+
+Error-Prevention Tip:
+Always use the explicit keyword on single-argument constructors unless they’re intended
+to be used as conversion constructors.
+
+
+
+
+* Overloading the Function Call Operator ()
+
+Overloading the function call operator () is powerful, because functions can take an arbitrary
+number of comma-separated parameters. In a customized String class, for example, you could overload
+this operator to select a substring from a String—the operator’s two integer parameters could specify
+the start location and the length of the substring to be selected. The operator() function could check
+for such errors as a start location out of range or a negative substring length. The overloaded function
+call operator must be a non-static member function and could be defined with the first line:
+
+    String String::operator()(size_t index, size_t length) const
+
+In this case, it should be a const member function because obtaining a substring should not modify
+the original String object. Suppose string1 is a String object containing the string "AEIOU". When
+the compiler encounters the expression string1(2, 3), it generates the member-function call
+string1.operator()(2, 3) which returns a String containing "IOU".
+
+Another possible use of the function call operator is to enable an alternate Array sub-scripting
+notation. Instead of using C++’s double-square-bracket notation, such as in chessBoard[row][column],
+you might prefer to overload the function call operator to enable the notation chessBoard(row, column),
+where chessBoard is an object of a modified two-dimensional Array class.

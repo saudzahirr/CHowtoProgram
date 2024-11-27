@@ -15,7 +15,7 @@ class Date {
         /**
          * Constructor
          */
-        explicit Date(unsigned int, unsigned int, unsigned int);
+        Date(unsigned int, unsigned int, unsigned int);
 
         /**
          * Destructor

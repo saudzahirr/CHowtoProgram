@@ -18,7 +18,7 @@ class Account {
         /**
          * Constructor
          */
-        explicit Account(std::string, double);
+        Account(std::string, double);
 
         /**
          * Public Member Functions

@@ -16,7 +16,7 @@
 class Employee {
     public:
         // function prototypes
-        explicit Employee(std::string, unsigned int, std::string, double);
+        Employee(std::string, unsigned int, std::string, double);
 
         std::string getName() const;
         unsigned int getAge() const;

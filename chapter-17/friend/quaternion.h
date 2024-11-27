@@ -18,7 +18,7 @@ class Quaternion {
         /**
          * Constructor
          */
-        explicit Quaternion(int = 1, int = 1, int = 1, int = 1); // default constructor
+                Quaternion(int = 1, int = 1, int = 1, int = 1); // default constructor
 
         /**
          * Destructor
