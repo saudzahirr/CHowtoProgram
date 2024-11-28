@@ -1,4 +1,4 @@
-Inheritance
+* Inheritance
 
 Object-oriented programming (OOP) by introduce inheritance—a form of software
 reuse in which you create a class that absorbs an existing class’s capabilities,
@@ -33,3 +33,32 @@ its members from other classes, or both.
 With single inheritance, a class is derived from one base class. With multiple inheritance,
 a derived class inherits simultaneously from two or more (possibly unrelated) base classes.
 Multiple inheritance is generally discouraged.
+
+With all forms of inheritance (public, protected and private), private members of a base
+class are not accessible directly from that class’s derived classes, but these private
+base-class members are still inherited (i.e., they’re still considered parts of the derived
+classes). With public inheritance, all other base-class members retain their original member
+access when they become members of the derived class (e.g., public members of the base class
+become public members of the derived class and, protected members of the base class become
+protected members of the derived class). Through inherited base-class member functions, the
+derived class can manipulate private members of the base class (if these inherited member functions
+provide such functionality in the base class).
+
+Note that friend functions are not inherited.
+
+
+
+
+* public, protected and private Inheritance
+
+When deriving a class with public inheritance, public members of the base class
+become public members of the derived class, and protected members of the base
+class become protected members of the derived class. A base class’s private members
+are never accessible directly from a derived class, but can be accessed through calls
+to the public and protected members of the base class.
+
+When deriving a class with protected inheritance, public and protected members of the
+base class become protected members of the derived class. When deriving a class with
+private inheritance, public and protected members of the base class become private members
+(e.g., the functions become utility functions) of the derived class. Private and protected
+inheritance are not is-a relationships.
