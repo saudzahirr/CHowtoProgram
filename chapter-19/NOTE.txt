@@ -1,0 +1,35 @@
+Inheritance
+
+Object-oriented programming (OOP) by introduce inheritance—a form of software
+reuse in which you create a class that absorbs an existing class’s capabilities,
+then customizes or enhances them. Software reuse saves time during program development
+by taking advantage of proven, high-quality software. When creating a class, instead
+of writing completely new data members and member functions, you can specify that the
+new class should inherit the members of an existing class. This existing class is called
+the "base class", and the new class is called the "derived class". Other programming
+languages, such as Java and C#, refer to the base class as the "superclass" and the derived
+class as the "subclass". A derived class represents a more specialized group of objects.
+
+C++ offers public, protected and private inheritance. Base class objects are not objects
+of their derived classes. We distinguish between the "is-a relationship" and the "has-a
+relationship". The is-a relationship represents "inheritance". In an is-a relationship,
+an object of a derived class also can be treated as an object of its base class—for example,
+a Car is a Vehicle, so any attributes and behaviors of a Vehicle are also attributes and behaviors
+of a Car. By contrast, the has-a relationship represents "composition". In a has-a relationship,
+an object contains one or more objects of other classes as members. For example, a Car has many
+components—it has a steering wheel, has a brake pedal, has a transmission, etc.
+
+Because every derived-class object is an object of its base class, and one base class can have
+many derived classes, the set of objects represented by a base class typically is larger than
+the set of objects represented by any of its derived classes. For example, the base class Vehicle
+represents all vehicles, including cars, trucks, boats, airplanes, bicycles and so on.
+By contrast, derived class Car represents a smaller, more specific subset of all vehicles.
+Inheritance relationships form "class hierarchies". A base class exists in a hierarchical
+relationship with its derived classes. Although classes can exist independently, once they’re
+employed in inheritance relationships, they become affiliated with other classes. A class
+becomes either a base class—supplying members to other classes, a derived class—inheriting
+its members from other classes, or both.
+
+With single inheritance, a class is derived from one base class. With multiple inheritance,
+a derived class inherits simultaneously from two or more (possibly unrelated) base classes.
+Multiple inheritance is generally discouraged.
