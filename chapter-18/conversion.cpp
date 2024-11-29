@@ -13,13 +13,13 @@
 class Object {
     int value;
 
-public:
-    Object(int v) : value(v) {}
+    public:
+        explicit Object(int v) : value(v) {}
 
-    // Conversion operator: Object to int
-    operator int() const {
-        return value;
-    }
+        // Conversion operator: Object to int
+        operator int() const {
+            return this->value;
+        }
 };
 
 int main() {
