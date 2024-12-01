@@ -27,7 +27,7 @@ class Square final: public Shape {
         /**
          * Public Member Function
          */
-        void draw() const override final;
+        void draw() const override;
 };
 
 #endif
@@ -48,8 +48,8 @@ NOTE:
         classes. Similarly, prior to C++11, any existing class could be used as a
         base class in a hierarchy. As of C++11, you can declare a class as final
         to prevent it from being used as a base class, as in
-        
-            class MyClass final // this class cannot be a base class
+
+            class Square final // this class cannot be a base class
             {
                 // class body
             };

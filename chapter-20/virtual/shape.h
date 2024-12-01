@@ -15,11 +15,6 @@ class Shape {
         /**
          * Constructor
          */
-        Shape();
-
-        /**
-         * Default Constructor
-         */
         Shape() = default;
 
         /**

@@ -12,7 +12,7 @@
 
 #include "shape.h"
 
-class Circle final: public Shape {
+class Circle: public Shape {
     public:
         /**
          * Constructor

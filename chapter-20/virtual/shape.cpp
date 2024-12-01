@@ -12,11 +12,6 @@
 #include "shape.h"
 
 /**
- * Constructor
- */
-Shape::Shape() {}
-
-/**
  * Virtual Destructor
  */
 Shape::~Shape() {
