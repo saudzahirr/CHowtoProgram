@@ -34,6 +34,9 @@ int main() {
     cout << "Square Area: " << rPtr->getArea() << endl;
     // cout << "Square Length: " << rPtr->getLength() << endl; // ‘class Rectangle’ has no member named ‘getLength’
 
+    sPtr = static_cast<Square*>(rPtr); // Downcasting
+    cout << "Square Length: " << sPtr->getLength() << endl;
+
     // derived-class pointer -> base-class object
     // sPtr = &rectangle; // Invalid conversion
 }
@@ -66,6 +69,6 @@ NOTE:
 
             Rectangle* rPtr = new Square(); // Upcasting
 
-            Rectangle* rPtr = new Rectangle();
+            Rectangle* rPtr = new Square();
             sPtr = static_cast<Square*>(rPtr); // Downcasting
 */
