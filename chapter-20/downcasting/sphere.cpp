@@ -4,7 +4,7 @@
  * Contact : m.saud.zahir@gmail.com
  *
  *
- * Topic: Abstract Classes and Pure virtual Functions
+ * Topic: Runtime Type Information with Downcasting, dynamic_cast, typeid and type_info
  */
 
 // External Includes

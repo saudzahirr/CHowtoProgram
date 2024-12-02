@@ -1,0 +1,52 @@
+Polymorphism, Virtual Functions and Dynamic Binding “Under the Hood”
+
+C++ makes polymorphism easy to program. It’s certainly possible to program for polymorphism in
+non-object-oriented languages such as C, but doing so requires complex and potentially dangerous
+pointer manipulations. C++ Standard Library classes like array and vector are implemented without
+polymorphism and virtual functions to avoid the associated execution-time overhead and achieve optimal
+performance.
+
+Polymorphism is accomplished through three levels of pointers, i.e., triple indirection.
+An executing program uses these data structures to execute virtual functions and achieve
+the dynamic binding associated with polymorphism.
+
+When C++ compiles a class that has one or more virtual functions, it builds a "virtual
+function table (vtable)" for that class. The vtable contains pointers to the class’s virtual
+functions. Just as the name of a built-in array contains the address in memory of the array’s
+first element, a pointer to a function contains the starting address in memory of the code
+that performs the function’s task. An executing program uses the vtable to select the proper
+function implementation each time a virtual function of that class is called.
+
+
+* Three Levels of Pointers to Implement Polymorphism
+
+    1. Polymorphism is accomplished through an elegant data structure involving three levels of
+       pointers. Level one—the function pointers in the vtable. These point to the actual functions
+       that execute when a virtual function is invoked.
+
+    2. Now we consider the second level of pointers. Whenever an object of a class with one or
+       more virtual functions is instantiated, the compiler attaches to the object a pointer to the
+       vtable for that class. This pointer is normally at the front of the object, but it isn’t required
+       to be implemented that way. 
+
+    3. The third level of pointers simply contains the handles to the objects that receive the
+       virtual function calls.
+
+    The compiler determines that the call is indeed being made via a base-class pointer and
+    that draw is a virtual function. The compiler determines that draw is the second entry
+    in each of the vtables. To locate this entry, the compiler notes that it will need to skip
+    the first entry. Thus, the compiler compiles an "offset" or "displacement" into the table
+    of machine-language object-code pointers to find the code that will execute the virtual
+    function call. The size in bytes of the offset depends on the number of bytes used to represent
+    a function pointer on an individual platform. For example, on a 32-bit platform, a pointer
+    is typically stored in four bytes, whereas on a 64-bit platform, a pointer is typically stored
+    in eight bytes. 
+
+Polymorphism, as typically implemented with virtual functions and dynamic binding in
+C++, is efficient. You can use these capabilities with nominal impact on performance.
+
+Virtual functions and dynamic binding enable polymorphic programming as an alternative
+to switch logic programming. Optimizing compilers normally generate polymorphic code
+that’s nearly as efficient as hand-coded switch-based logic. Polymorphism’s overhead
+is acceptable for most applications. In some situations—such as real-time applications
+with stringent performance requirements—polymorphism’s overhead may be too high.
