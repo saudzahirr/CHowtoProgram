@@ -31,7 +31,7 @@ void staticArray(void) {
     ++array[0];
     ++array[2];
     ++array[4];
-    
+
     for (size_t i = 0; i < SIZE; i++) {
         printf("%d ", array[i]);
     }
@@ -43,7 +43,7 @@ void autoArray(void) {
     ++array[0];
     ++array[2];
     ++array[4];
-    
+
     for (size_t i = 0; i < SIZE; i++) {
         printf("%d ", array[i]);
     }

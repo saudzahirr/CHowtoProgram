@@ -41,3 +41,5 @@ compile: $(FILE)
 # Clean the generated output
 clean:
 	rm -f $(OUT)
+	git clean -Xfd
+

@@ -8,9 +8,9 @@
 #
 
 all:
-	gcc main.c geometry.c -o geometry.out
+	gcc main.c geometry.c
 
 .PHONY: clean
 
 clean:
-	rm -rf geometry.out
+	rm -rf *.out *.exe

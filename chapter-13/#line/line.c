@@ -9,9 +9,14 @@
 
 #include <stdio.h>
 
-#line 100 "main.c"
 
 int main() {
+    printf("Line number: %d\n", __LINE__);
+    printf("Source name: %s\n", __FILE__);
+
+    #line 100 "main.c"
+    printf("Line number: %d\n", __LINE__);
+    printf("Source name: %s\n", __FILE__);
     printf("Line number: %d\n", __LINE__);
     printf("Source name: %s\n", __FILE__);
 
